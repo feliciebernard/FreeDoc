@@ -8,23 +8,22 @@ City.destroy_all
 
 
 10.times do
-  doctor = Doctor.create!(
+  doctor = Doctor.create(
     first_name: Faker::Name.first_name, 
     last_name: Faker::Name.last_name, 
     zip_code: Faker::Address.zip_code
-    city_id: City.all.sample.id
     )
 end
 
 10.times do
-  patient = Patient.create!(
+  patient = Patient.create(
     first_name: Faker::Name.first_name, 
     last_name: Faker::Name.last_name
     )
 end
 
 10.times do
-  city = City.create!( 
+  city = City.create( 
     city_name: Faker::Address.city
     )
 end
@@ -37,6 +36,6 @@ end
 
 10.times do
   specialty = Specialty.create!(
-    spacialty_name: Faker::Job.key_skill 
-    )
+    spacialty_name: ["Allergy and immunology", "Anesthesiology", "Dermatology", "Diagnostic radiology", "Emergency medicine", "Family medicine", "Internal medicine", "Medical genetics", "Neurology", "Nuclear medicine", "Obstetrics and gynecology", "Ophthalmology", "Pathology", "Pediatrics", "Physical medicine and rehabilitation", "Preventive medicine", "Psychiatry", "Radiation oncology", "Surgery", "Urology"].sample
+      )
 end

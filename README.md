@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Voici le petit frère de Doctolib, bientôt sur le réseau. En attendant, voici un petit aperçu de sa base de données, au top !
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+On n'oublie pas de faire un petit bundle install avant de lancer la console pour tester. Enjoy :)
